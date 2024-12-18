@@ -9,6 +9,7 @@ body {
     width: 50px;
 }
 
+
 .header {
     display: flex;
     background-color: lightblue;
@@ -17,10 +18,56 @@ body {
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-text {
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Adds spacing between navigation items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #d1e7ff; /* Lighter blue hover effect */
+    color: #007bff; /* Text color on hover */
 }
 
 .stats-container {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -72,4 +119,22 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px lightblue;
+}
+
+/* style the search box */
+#search-box {
+    padding: 1%;
+    gap: 8px;
+    align-items: center;
+    /* margin: 1%; */
+    border-radius: 999px;
+    border: none;
+    background-color: rgb(223, 227, 243);
+    box-shadow: rgba(17, 25, 46, 0.1) 0px 0px 0px 1px inset;
+    color: rgb(1, 5, 15);
 }
